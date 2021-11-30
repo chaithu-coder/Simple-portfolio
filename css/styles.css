@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Outfit:wght@100;200&family=PT+Sans+Narrow&family=Poppins:ital,wght@0,200;1,300&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+.offset::before{
+  display: block;
+  content: "";
+  height: 6rem;
+
+}
+nav.navbar{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  background-color: rgba(0,0,0,0.6) !important;
+  padding: 20px 0;
+}
+nav.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-left: 20px;
+}
+nav.navbar-dark .navbar-nav .nav-link.active,
+nav.navbar-dark .navbar-nav .nav-link:hover{
+  color: rgb(188, 4, 244);
+}
+#heading{
+  position: relative;
+}
+.heading-content{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  max-width: 100%;
+  }
+  .heading-content h5{
+    color: white;
+    font-size: 4em;
+    font-weight: 500;
+    font-family: "PT Sans Narrow";
+  }
+  .heading-content h1{
+    color: white;
+    font-size: 5em;
+    font-weight:bolder;
+    font-family: "Outfit";
+  }
+  .heading-content p{
+    color: #ccc;
+    font-size: 1em;
+    font-weight:lighter;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+  }
+
+  /* --------------about -start------------- */
+  #about .btn{
+    border: 2px solid red transparent;
+    width: 40%;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+#about .btn a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#about .btn:hover{
+  border: 2px solid rgb(123, 240, 19);
+  cursor: pointer;
+}
+
+/* Services */
+#services .button{
+  border: 2px solid red transparent;
+  width: 40%;
+  padding: 15px 22px;
+  background: #000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#services .button a{
+text-decoration: none;
+color: #fff;
+font-size: 1em;
+font-weight: bold;
+text-transform: uppercase;
+}
+#services .button:hover{
+border: 2px solid rgb(123, 240, 19);
+cursor: pointer;
+}
+/* Newsletter */
+.sec1{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafb;
+}
+.sec1 h2{
+  font-family: 'Poppins', sans-serif;
+font-weight: bold;
+letter-spacing: 3px;
+line-height: 50px;
+}
+.sec1 p{
+  font-family: 'Poppins', sans-serif;
+font-weight: 400;
+}
+
+/* meadia query */
+@media screen and (max-width:767px) {
+  /* for batlet */
+  .navbar{
+    letter-spacing: 1rem;
+
+    padding: 10px 0;
+}
+
+  .heading-content h5{
+
+    font-size: 3em;
+
+  }
+  .heading-content h1{
+
+    font-size: 3em;
+
+  }
+  .heading-content p{
+
+    font-size: 0.9em;
+
+  }
+
+@media screen and (max-width:479px) {
+  /* mobile version */
+  .navbar{
+    letter-spacing: 0.1rem;
+
+    padding: 7px 0;
+  }
+
+  .heading-content h5{
+
+    font-size: 2em;
+
+  }
+  .heading-content h1{
+
+    font-size: 2em;
+
+  }
+  .heading-content p{
+
+    font-size: 0.7em;
+
+  }
+  #contact .post-heading h3{
+    font-size: 2em;
+
+  }
+
+}
